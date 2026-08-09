@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية - Auryx</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            color: #2d3748;
+            line-height: 1.8;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 50px;
+        }
+        h1 {
+            color: #1a202c;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: #718096;
+            margin-bottom: 40px;
+            font-size: 0.95em;
+        }
+        h2 {
+            color: #2b6cb0;
+            font-size: 1.4em;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        h3 {
+            color: #2d3748;
+            font-size: 1.1em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            padding-right: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background: #ebf8ff;
+            border-right: 4px solid #4299e1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .warning-box {
+            background: #fffaf0;
+            border-right: 4px solid #ed8936;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .success-box {
+            background: #f0fff4;
+            border-right: 4px solid #48bb78;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            color: #a0aec0;
+            font-size: 0.9em;
+        }
+        strong { color: #1a202c; }
+        a { color: #2b6cb0; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lang-switch {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .lang-switch a {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #edf2f7;
+            border-radius: 20px;
+            margin: 0 5px;
+            font-size: 0.9em;
+        }
+        .lang-switch a.active {
+            background: #2b6cb0;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 25px; }
+            h1 { font-size: 1.6em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="#ar" class="active">العربية</a>
+            <a href="#en">English</a>
+        </div>
+
+        <h1>سياسة الخصوصية</h1>
+        <p class="subtitle">تطبيق Auryx - الخزنة الرقمية للإرث</p>
+        <p class="subtitle">آخر تحديث: 9 أغسطس 2026</p>
+
+        <div class="success-box">
+            <strong>ملخص سريع:</strong> Auryx يتبع نموذج <strong>Zero-Knowledge</strong>. نحن <strong>لا نستطيع</strong> الوصول إلى بياناتك أو محتوى خزنتك. كل البيانات مشفرة على جهازك قبل إرسالها إلى خوادمنا. نحن <strong>لا نبيع</strong> بياناتك و<strong>لا نشاركها</strong> مع أي طرف ثالث.
+        </div>
+
+        <h2>1. مقدمة</h2>
+        <p>مرحباً بك في تطبيق <strong>Auryx</strong> ("التطبيق" أو "الخدمة"). نحن نلتزم بحماية خصوصيتك وأمان بياناتك. هذه السياسة توضح كيفية جمعنا واستخدامنا وحمايتنا لمعلوماتك الشخصية عند استخدامك لتطبيقنا.</p>
+        <p>باستخدامك لتطبيق Auryx، فإنك توافق على الشروط الواردة في هذه السياسة. إذا كنت لا توافق على أي جزء منها، يرجى عدم استخدام التطبيق.</p>
+
+        <h2>2. نموذج Zero-Knowledge (عدم المعرفة)</h2>
+        <div class="highlight-box">
+            <p><strong>هذا هو جوهر تطبيقنا:</strong></p>
+            <ul>
+                <li>جميع البيانات الحساسة (كلمات المرور، المفاتيح، محتوى الخزنة) تُشفّر <strong>محلياً على جهازك</strong> قبل مغادرته.</li>
+                <li>نحن <strong>لا نملك</strong> مفاتيح فك التشفير الخاصة بك.</li>
+                <li>نحن <strong>لا نستطيع</strong> قراءة أو فك تشفير أو الوصول إلى محتوى خزنتك تحت أي ظرف.</li>
+                <li>نظام <strong>Shamir's Secret Sharing</strong> يضمن تقسيم المفاتيح بين الحراس دون أن يملك أي طرف (بما في ذلك نحن) المفتاح الكامل.</li>
+            </ul>
+        </div>
+
+        <h2>3. ما هي البيانات التي نجمعها</h2>
+        <p>نحن نجمع فقط البيانات الضرورية لتشغيل الخدمة. وتنقسم إلى:</p>
+
+        <h3>3.1 بيانات الحساب (Account Information)</h3>
+        <ul>
+            <li><strong>اسم المستخدم</strong> — لعرضه داخل التطبيق.</li>
+            <li><strong>عنوان البريد الإلكتروني</strong> — لإرسال رموز OTP وإشعارات الغياب (Absence Protocol) ودعوات الحراس.</li>
+            <li><strong>رقم الهاتف (اختياري)</strong> — إذا اخترت تفعيل المصادقة الثنائية عبر SMS.</li>
+        </ul>
+
+        <h3>3.2 بيانات الاستخدام (Usage Data)</h3>
+        <ul>
+            <li><strong>سجلات الأخطاء (Crash Logs)</strong> — لتحسين استقرار التطبيق. لا تحتوي على محتوى خزنتك.</li>
+            <li><strong>إحصائيات الاستخدام المجهولة</strong> — مثل عدد مرات فتح التطبيق، لا ترتبط بهويتك.</li>
+            <li><strong>نوع الجهاز ونظام التشغيل</strong> — لضمان التوافق.</li>
+        </ul>
+
+        <h3>3.3 ما الذي <strong>لا</strong> نجمعه</h3>
+        <div class="warning-box">
+            <p>نحن <strong>لا نجمع ولا نخزن ولا نستطيع الوصول</strong> إلى:</p>
+            <ul>
+                <li>❌ محتوى الخزنة المشفرة (Vault Content)</li>
+                <li>❌ كلمات المرور الرئيسية (Master Password)</li>
+                <li>❌ مفاتيح التشفير الخاصة (Private Encryption Keys)</li>
+                <li>❌ Shares الموزعة على الحراس (Guardian Shares)</li>
+                <li>❌ محتوى الملفات أو الوثائق داخل الخزنة</li>
+                <li>❌ سجل تصفحك أو نشاطك خارج التطبيق</li>
+                <li>❌ جهات الاتصال من هاتفك (إلا إذا اخترت استيرادها يدوياً)</li>
+            </ul>
+        </div>
+
+        <h2>4. كيف نستخدم بياناتك</h2>
+        <p>نستخدم البيانات التي نجمعها للأغراض التالية فقط:</p>
+        <ol>
+            <li><strong>توفير الخدمة:</strong> إنشاء حسابك، إدارة خزنتك، إرسال دعوات الحراس.</li>
+            <li><strong>الأمان:</strong> إرسال رموز OTP للمصادقة، تشغيل بروتوكول الغياب (Absence Protocol).</li>
+            <li><strong>الإشعارات:</strong> إعلامك بأحداث مهمة (مثل تصويت الحراس على Absence Protocol).</li>
+            <li><strong>التحسين:</strong> تحليل الأخطاء الفنية لتحسين الأداء (بدون محتوى خزنتك).</li>
+            <li><strong>الدعم الفني:</strong> الرد على استفساراتك عبر البريد الإلكتروني.</li>
+        </ol>
+
+        <h2>5. مشاركة البيانات مع أطراف ثالثة</h2>
+        <div class="success-box">
+            <p><strong>نحن لا نشارك بياناتك مع أي طرف ثالث</strong> إلا في الحالات التالية الضرورية جداً:</p>
+            <ul>
+                <li>🔒 <strong>مزودو الخدمات التقنية:</strong> نستخدم خدمات مثل:
+                    <ul>
+                        <li>Resend / SendGrid — لإرسال الإيميلات (OTP والدعوات).</li>
+                        <li>Expo Push Notifications — لإرسال الإشعارات للجهاز.</li>
+                        <li>PostgreSQL Hosting — لاستضافة قاعدة البيانات.</li>
+                    </ul>
+                    هؤلاء المزودون يستلمون فقط البيانات الضرورية (مثل: "أرسل OTP لهذا الإيميل") و<strong>لا يستلمون محتوى خزنتك</strong>.
+                </li>
+                <li>⚖️ <strong>الالتزام القانوني:</strong> إذا تلقينا أمراً قضائياً ملزماً من جهة مختصة. وفي هذه الحالة، نظراً لنموذج Zero-Knowledge، <strong>لن نتمكن</strong> من تقديم محتوى خزنتك لأننا لا نملك مفاتيح فك التشفير.</li>
+            </ul>
+        </div>
+        <p><strong>نحن لا نبيع بياناتك أبداً.</strong> ليس لدينا نموذج إعلاني ولا نشارك بياناتك مع جهات تسويقية.</p>
+
+        <h2>6. الأمان وحماية البيانات</h2>
+        <p>نحن نتخذ إجراءات أمنية صارمة:</p>
+        <ul>
+            <li><strong>التشفير:</strong> جميع البيانات تُنقل عبر HTTPS/TLS. محتوى الخزنة مشفر بـ AES-256-GCM.</li>
+            <li><strong>Shamir's Secret Sharing:</strong> مفاتيحك مقسمة بين الحراس. لا يوجد "نقطة فشل" واحدة.</li>
+            <li><strong>Zero-Knowledge:</strong> خوادمنا تخزن فقط البيانات المشفرة. نحن لا نستطيع فك تشفيرها.</li>
+            <li><strong>Rate Limiting:</strong> نحد من محاولات الوصول لمنع الهجمات العنيفة (Brute Force).</li>
+            <li><strong>التحديثات الأمنية:</strong> نراقب الثغرات ونُصدر تحديثات فورية عند الحاجة.</li>
+        </ul>
+
+        <h2>7. الاحتفاظ بالبيانات وحذفها</h2>
+        <ul>
+            <li><strong>مدة الاحتفاظ:</strong> نحتفظ ببيانات حسابك (الإيميل والاسم) طالما أن حسابك نشط.</li>
+            <li><strong>التوكنات المؤقتة:</strong> توكنات الدعوات (invite tokens) تُحذف تلقائياً بعد 7 أيام من انتهائها.</li>
+            <li><strong>حذف الحساب:</strong> يمكنك حذف حسابك بالكامل من الإعدادات. عند الحذف:
+                <ul>
+                    <li>نحذف بيانات حسابك (الإيميل، الاسم).</li>
+                    <li>نحذف metadata الخزنة من قاعدة البيانات.</li>
+                    <li><strong>ملاحظة:</strong> بما أن محتوى الخزنة مشفر بمفاتيحك الخاصة، فإن بقايا البيانات المشفرة على الخوادم تصبح غير قابلة للفك بدون مفاتيحك.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>8. حقوقك</h2>
+        <p>بموجب قوانين حماية البيانات (GDPR, CCPA, وغيرها)، لديك الحقوق التالية:</p>
+        <ul>
+            <li><strong>الحق في الوصول:</strong> طلب نسخة من بياناتك الشخصية التي نحتفظ بها.</li>
+            <li><strong>الحق في التصحيح:</strong> تعديل بياناتك إذا كانت غير دقيقة.</li>
+            <li><strong>الحق في الحذف:</strong> طلب حذف حسابك وبياناتك ("الحق في النسيان").</li>
+            <li><strong>الحق في قابلية النقل:</strong> تصدير بياناتك بتنسيق قابل للقراءة.</li>
+            <li><strong>الحق في الاعتراض:</strong> الاعتراض على معالجة بياناتك لأغراض معينة.</li>
+        </ul>
+        <p>للتمارس هذه الحقوق، تواصل معنا عبر البريد الإلكتروني المذكور في الأسفل.</p>
+
+        <h2>9. ملفات تعريف الارتباط (Cookies) والتقنيات المشابهة</h2>
+        <p>تطبيق Auryx للجوال <strong>لا يستخدم ملفات تعريف الارتباط (Cookies)</strong>. نستخدم فقط:</p>
+        <ul>
+            <li><strong>Secure Storage:</strong> لتخزين توكن المصادقة محلياً على جهازك (Keychain على iOS، Keystore على Android).</li>
+            <li><strong>Push Notifications Tokens:</strong> لتلقي الإشعارات من Expo.</li>
+        </ul>
+
+        <h2>10. حماية الأطفال</h2>
+        <p>تطبيق Auryx <strong>غير موجه للأطفال دون سن 13 عاماً</strong>. نحن لا نجمع بيانات عن قصد من الأطفال. إذا اكتشفنا أن طفلاً تحت 13 عاماً قد قدم لنا بيانات شخصية، سنحذفها فوراً.</p>
+
+        <h2>11. التغييرات على هذه السياسة</h2>
+        <p>قد نقوم بتحديث هذه السياسة من وقت لآخر. سنوافيك بأي تغييرات جوهرية عبر:</p>
+        <ul>
+            <li>إشعار داخل التطبيق.</li>
+            <li>إيميل إلى عنوانك المسجل.</li>
+        </ul>
+        <p>تاريخ آخر تحديث مذكور في أعلى هذه الصفحة. باستمرارك في استخدام التطبيق بعد أي تعديل، فإنك توافق على السياسة المحدثة.</p>
+
+        <h2>12. التواصل معنا</h2>
+        <p>إذا كان لديك أي سؤال أو استفسار أو طلب بخصوص هذه السياسة أو بياناتك الشخصية، يمكنك التواصل معنا:</p>
+        <div class="highlight-box">
+            <p><strong>البريد الإلكتروني:</strong> privacy@auryx.app</p>
+            <p><strong>الرد المتوقع:</strong> خلال 48 ساعة عمل.</p>
+        </div>
+
+        <h2>13. التوافق مع Google Play</h2>
+        <p>هذه السياسة تتوافق مع متطلبات <strong>Google Play Developer Policy Center</strong> و<strong>User Data Policy</strong>:</p>
+        <ul>
+            <li>✅ نحن نوضح بشكل صريح ما هي البيانات التي نجمعها.</li>
+            <li>✅ نوضح كيف نستخدمها ومع من نشاركها.</li>
+            <li>✅ نقدم طريقة تواصل واضحة.</li>
+            <li>✅ نلتزم بأمان البيانات وحماية المستخدم.</li>
+            <li>✅ نحن لا نجمع بيانات حساسة (Sensitive Data) دون حماية إضافية.</li>
+        </ul>
+
+        <div class="footer">
+            <p>© 2026 Auryx. جميع الحقوق محفوظة.</p>
+            <p>هذه السياسة سارية المفعول اعتباراً من 9 أغسطس 2026.</p>
+        </div>
+    </div>
+</body>
+  </html>
